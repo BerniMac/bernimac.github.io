@@ -56,7 +56,7 @@ Email Address: Pushnteo@gmail.com
 [View mock interview (README)](./README.md)
 
 
-
+ <video src="Video.mp4" controls width="600"></video>
 
 https://github.com/user-attachments/assets/3ca6c776-8d3b-42d8-89a7-f086885db46e
 
