@@ -5,6 +5,8 @@
 I had to compress the video file size so some quality might have been lost 
 
   <video src= "./Video.Project.1.1.1.mov" controls width="600"></video>
+
+  <video src="Video.mp4" controls width="600"></video>
   
 [ Watch the video](./Video.Project.1.1.1.mov)
 
