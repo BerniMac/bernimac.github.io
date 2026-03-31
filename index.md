@@ -53,3 +53,6 @@ Email Address: Pushnteo@gmail.com
 ##### E-mail
 223182192@mycput.ac.za
 
+[View mock interview (README)](./README.md)
+
+
