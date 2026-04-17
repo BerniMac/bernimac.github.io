@@ -67,3 +67,8 @@ While preparing for internship applications, I turned away from a standard docum
 
 
 In preparation for future upcoming technical internship interviews, I recorded a mock interview sessions to evaluate my performance beyond just technical accuracy.My goal was to identify and correct non-verbal communication habits—such as hand placement and tone of voice—while ensuring my speaking pace remained professional and easy to follow.I reviewed video recordings of my practice sessions, specifically analyzing my body language and vocal delivery. I practiced maintaining a steady, confident pace during complex technical explanations and adjusted my hand gestures to appear more engaged and composed. By identifying these cues, I significantly improved my delivery, moving from a rushed speaking style to a deliberate, calm presence.
+
+
+### **My reflection on using github pages**
+
+I needed a reliable, accessible way to host my projects and CV that would also highlight my proficiency with version control My goal was to deploy a live, public-facing website directly from my source code without the overhead of external third-party hosting services. I researched and implemented GitHub Pages, configuring the build and deployment settings directly within my repository . This approach allowed me to bypass traditional hosting costs and complexities
