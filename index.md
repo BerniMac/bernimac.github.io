@@ -57,3 +57,13 @@ Email Address: Pushnteo@gmail.com
 [![Watch the video](https://img.youtube.com/vi/Nvk-4PR0ky0/0.jpg)](https://youtu.be/Nvk-4PR0ky0)
 
 
+---
+### **My reflection using markdown lanuage for cv writing**
+
+While preparing for internship applications, I turned away from a standard document-based CV which didn't fully demonstrate my technical identity or my familiarity with developer ecosystems like GitHub. I set out to create a version-controlled, professional CV using Markdown to ensure my portfolio was "market-ready" and to showcase my ability to handle various technical formats. I researched Markdown syntax and structured my professional history, project links, and technical skills (including PHP, React, and Java) into a clean, readable format. This process not only added a new technical skill to my toolkit but also resulted in a professional, live-hosted CV. It demonstrated my "documentation-as-code" mindset to potential employers and successfully prepared me for the internship recruitment cycle. 
+
+
+### **My reflection on the mock-interview**
+
+
+In preparation for future upcoming technical internship interviews, I recorded a mock interview sessions to evaluate my performance beyond just technical accuracy.My goal was to identify and correct non-verbal communication habits—such as hand placement and tone of voice—while ensuring my speaking pace remained professional and easy to follow.I reviewed video recordings of my practice sessions, specifically analyzing my body language and vocal delivery. I practiced maintaining a steady, confident pace during complex technical explanations and adjusted my hand gestures to appear more engaged and composed. By identifying these cues, I significantly improved my delivery, moving from a rushed speaking style to a deliberate, calm presence.
