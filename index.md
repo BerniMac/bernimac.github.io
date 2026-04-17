@@ -58,7 +58,7 @@ Email Address: Pushnteo@gmail.com
 
 
 ---
-### **My reflection using markdown lanuage for cv writing**
+### **My reflection on using markdown language for cv writing**
 
 While preparing for internship applications, I turned away from a standard document-based CV which didn't fully demonstrate my technical identity or my familiarity with developer ecosystems like GitHub. I set out to create a version-controlled, professional CV using Markdown to ensure my portfolio was "market-ready" and to showcase my ability to handle various technical formats. I researched Markdown syntax and structured my professional history, project links, and technical skills (including PHP, React, and Java) into a clean, readable format. This process not only added a new technical skill to my toolkit but also resulted in a professional, live-hosted CV. It demonstrated my "documentation-as-code" mindset to potential employers and successfully prepared me for the internship recruitment cycle. 
 
