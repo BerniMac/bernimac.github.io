@@ -53,20 +53,7 @@ Email Address: Pushnteo@gmail.com
 ##### E-mail
 223182192@mycput.ac.za
 
-[View mock interview (README)](./README.md)
-
-
- <video src="Video.mp4" controls width="600"></video>
-
-https://github.com/user-attachments/assets/3ca6c776-8d3b-42d8-89a7-f086885db46e
-
-
-
-https://github.com/user-attachments/assets/5723b3ba-8b57-4e2a-bc87-b5ec6d4cb72b
 
 [![Watch the video](https://img.youtube.com/vi/Nvk-4PR0ky0/0.jpg)](https://youtu.be/Nvk-4PR0ky0)
 
 
-[![Watch Demo](thumbnail.png)](https://github.com/BerniMac/bernimac.github.io/releases/download/v1/IsheanesEkaChowuraya223182192.mp4)
-
-[ Watch Demo Video](https://github.com/BerniMac/bernimac.github.io/releases/download/v1/IsheanesEkaChowuraya223182192.mp4)
