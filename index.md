@@ -9,7 +9,7 @@ I am a proactive 3rd-year Application Development student seeking an internship 
 TRADELINK     -2024 Duration: 2 weeks
 ASSISTED A FIELD TECHNICIAN WITH THE REPLACEMENT OF SHOPRITE SCANNERS, PARTICIPATED IN UPDATING AND CONFIGURING SCANNER SYSTEMS, GAINED VALUABLE HANDS-ON, REAL-WORLD TECHNICAL EXPERIENCE, LEARNED HOW EQUIPMENT UPGRADES ARE PERFORMED IN A LIVE RETAIL ENVIRONMENT, IMPROVED TROUBLESHOOTING AND TECHNICAL SUPPORT EXPOSURE, DEVELOPED UNDERSTANDING OF SYSTEM CONFIGURATION PROCESSES
 ##### **Projects**
-[An online ecommerce website](: https://github.com/BerniMac/MyFirstEcommerce.git)
+[ecommerce website](: https://github.com/BerniMac/MyFirstEcommerce.git)
 
 [A IOT vault project A vault that is controlled by sensors](: https://github.com/fid-it-ice360-1-2s/iot-elective-project-iot-underdogs.git )
 
@@ -60,7 +60,7 @@ Email Address: Pushnteo@gmail.com
 ---
 ### **My reflection on using markdown language for cv writing**
 
-While preparing for internship applications, I turned away from a standard document-based CV which didn't fully demonstrate my technical identity or my familiarity with developer ecosystems like GitHub. I set out to create a version-controlled, professional CV using Markdown to ensure my portfolio was "market-ready" and to showcase my ability to handle various technical formats. I researched Markdown syntax and structured my professional history, project links, and technical skills (including PHP, React, and Java) into a clean, readable format. This process not only added a new technical skill to my toolkit but also resulted in a professional, live-hosted CV. It demonstrated my "documentation-as-code" mindset to potential employers and successfully prepared me for the internship recruitment cycle. 
+While preparing for internship applications, I turned away from a standard document-based CV which didn't fully demonstrate my technical identity or my familiarity with developer ecosystems like GitHub the idea was to document my skills ,my experiences and projects that I worked on in the past. I set out to create a version-controlled, professional CV using Markdown to ensure my portfolio was "market-ready" and to showcase my ability to handle various technical formats. I researched Markdown syntax and structured my professional history, project links, and technical skills (including PHP, React, and Java) into a clean, readable format. This process not only added a new technical skill to my toolkit but also resulted in a professional, live-hosted CV. It demonstrated my "documentation-as-code" mindset to potential employers and successfully prepared me for the internship recruitment cycle. 
 
 
 ### **My reflection on the mock-interview**
@@ -71,4 +71,4 @@ In preparation for future upcoming technical internship interviews, I recorded a
 
 ### **My reflection on using github pages**
 
-I needed a reliable, accessible way to host my projects and CV that would also highlight my proficiency with version control My goal was to deploy a live, public-facing website directly from my source code without the overhead of external third-party hosting services. I researched and implemented GitHub Pages, configuring the build and deployment settings directly within my repository . This approach allowed me to bypass traditional hosting costs and complexities
+I needed to use a reliable, accessible way to host my projects and CV that would also highlight my proficiency with version control My goal was to deploy a live, public-facing website directly from my source code without the overhead of external third-party hosting services. I researched and implemented GitHub Pages, configuring the build and deployment settings directly within my repository . This approach allowed me to bypass traditional hosting costs and complexities and be able to share my cv without the overhead of having to write emails and attaching documents. 
