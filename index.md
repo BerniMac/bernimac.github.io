@@ -262,4 +262,313 @@ A task or feature is considered complete when:
 -  Release
 -  Retrospective (recommended for a student sprint cadence)
 
+
   
+# QR Code Attendance Management System (QAMS)
+## User Stories and Development Tasks
+
+**Project:** QR Code Attendance Management System  
+**Team:** Team QAMS  
+**Methodology:** Scrum  
+**Frontend:** Vue.js and Bootstrap  
+**Backend:** Spring Boot REST API  
+**Database:** MySQL  
+**QR Code Approach:** QR code generator library with database-driven dynamic QR codes
+
+---
+
+
+## US-01: Secure User Login
+
+**User Story**
+
+As a registered user, I want to log in securely so that I can access the system according to my role.
+
+
+**Development Tasks**
+
+-  Task1: Create the login page using Vue.js and Bootstrap.
+-  Task2: Create the login REST API endpoint in Spring Boot.
+-  Task3: Implement authentication and credential verification.
+-  Task4: Connect the login page to the backend API.
+-  Task5: Configure role-based access for students, lecturers and administrators.
+-  Task6: Implement secure session or token management.
+-  Task7: Test valid and invalid login attempts.
+-  Task8: Verify that unauthorised users cannot access protected pages.
+
+
+---
+
+## US-02: Restrict Access to Registered Students
+
+**User Story**
+
+As a lecturer, I want only registered students to mark attendance so that unauthorised people cannot register attendance.
+
+
+**Development Tasks**
+
+-  Task9: Create or configure the student records in the database.
+-  Task10: Implement student identity verification.
+-  Task11: Validate authenticated users before processing attendance requests.
+-  Task12: Restrict attendance endpoints to authorised students.
+-  Task13: Test attendance attempts by registered and unregistered users.
+
+
+---
+
+## US-03: Generate a QR Code for a Class
+
+**User Story**
+
+As a lecturer, I want to generate a unique QR code for a class so that students can register their attendance digitally.
+
+
+**Development Tasks**
+
+-  Task14: Design the class and attendance session database tables.
+-  Task15: Implement a unique session or token generator.
+-  Task16: Integrate a QR code generation library.
+-  Task17: Create the Spring Boot endpoint for generating QR codes.
+-  Task18: Link each QR code to the correct class or module.
+-  Task19: Implement the QR code expiry mechanism.
+-  Task20: Create the lecturer interface for generating QR codes.
+-  Task21: Display the generated QR code on the lecturer dashboard.
+-  Task22: Test unique QR code generation and expiry.
+
+
+---
+
+## US-04: Prevent Expired and Reused QR Codes
+
+**User Story**
+
+As a system administrator, I want expired QR codes to be rejected so that students cannot reuse old codes to mark attendance.
+
+**Development Tasks**
+
+-  Task23: Store QR session tokens and expiry timestamps in MySQL.
+-  Task24: Implement QR code validation in Spring Boot.
+-  Task25: Check whether the QR code belongs to an active session.
+-  Task26: Reject expired or invalid tokens.
+-  Task27: Prevent reuse of expired QR sessions.
+-  Task28: Display an error message when a QR code is invalid or expired.
+-  Task29: Test expired, invalid and reused QR codes.
+
+
+---
+
+
+## US-05: Scan a QR Code to Mark Attendance
+
+**User Story**
+
+As a student, I want to scan the lecturer's QR code so that my attendance can be recorded digitally.
+
+
+**Development Tasks**
+
+-  Task30: Design the student attendance page.
+-  Task31: Integrate a QR code scanning library.
+-  Task32: Request camera access on supported devices.
+-  Task33: Implement the QR scanning interface.
+-  Task34: Send the scanned token to the Spring Boot API.
+-  Task35: Validate the token, class and session.
+-  Task36: Check that the attendance session is active.
+-  Task37: Implement attendance registration.
+-  Task38: Display the result of the attendance request.
+-  Task39: Test scanning on supported mobile, tablet and desktop devices.
+-  Task40: Measure response time and optimise the attendance request if necessary.
+
+
+---
+
+## US-06: Prevent Duplicate Attendance
+
+**User Story**
+
+As a lecturer, I want each student to mark attendance only once per session so that attendance records remain accurate.
+
+
+**Development Tasks**
+
+-  Task41: Design the attendance table with student and session references.
+-  Task42: Implement duplicate attendance checks.
+-  Task43: Add an appropriate database uniqueness constraint.
+-  Task44: Handle repeated or simultaneous attendance requests safely.
+-  Task45: Display a message when attendance has already been recorded.
+-  Task46: Test duplicate scans and concurrent requests.
+
+
+---
+
+## US-07: Receive Attendance Confirmation
+
+**User Story**
+
+As a student, I want to receive confirmation after successfully marking attendance so that I know my attendance has been recorded.
+
+
+**Development Tasks**
+
+-  Task47: Create attendance success and error messages.
+-  Task48: Return clear responses from the attendance API.
+-  Task49: Display the confirmation on the student interface.
+-  Task50: Handle network failures and server errors.
+-  Tasl51: Test successful, duplicate and failed attendance requests.
+
+
+---
+
+## US-09: View Attendance History
+
+**User Story**
+
+As a student, I want to view my attendance history so that I can check which classes I attended.
+
+
+**Development Tasks**
+
+-  Task: Create the student attendance history page.
+-  Task: Create an API endpoint to retrieve attendance history.
+-  Task: Query attendance records associated with the logged-in student.
+-  Task: Display class, module, date and attendance status.
+-  Task: Add appropriate loading and empty-state messages.
+-  Task: Test history retrieval and access restrictions.
+
+
+---
+
+## US-10: Generate Attendance Reports
+
+**User Story**
+
+As a lecturer, I want to generate attendance reports so that I can monitor student attendance for my classes.
+
+**Development Tasks**
+
+-  Task: Identify the required attendance report fields.
+-  Task: Create database queries for attendance reports.
+-  Task: Develop the Spring Boot report endpoint.
+-  Task: Create the lecturer reports page.
+-  Task: Display attendance records in a readable table.
+-  Task: Implement filtering by class, module or date where required.
+-  Task: Restrict reports to authorised lecturers and administrators.
+-  Task: Test report accuracy and access control.
+
+
+---
+
+
+## US-12: Protect Student Data
+
+**User Story**
+
+As a student, I want my personal information and attendance records to be protected so that my data is not accessed or disclosed without authorisation.
+
+
+**Development Tasks**
+
+-  Task: Identify the student data required by the system.
+-  Task: Configure secure database access.
+-  Task: Implement role-based authorisation.
+-  Task: Configure HTTPS for deployed environments.
+-  Task: Protect sensitive data using appropriate encryption.
+-  Task: Review logging to prevent unnecessary exposure of personal data.
+-  Task: Review data handling against applicable POPIA requirements.
+-  Task: Test access restrictions and data protection controls.
+
+
+---
+
+## US-13: Prevent Attendance for the Wrong Class
+
+**User Story**
+
+As a lecturer, I want the system to validate the class or module associated with a QR code so that attendance is not recorded for the wrong class.
+
+**Development Tasks**
+
+- Task: Define relationships between classes, modules and attendance sessions.
+- Task: Include a secure session reference in generated QR codes.
+- Task: Validate the class or module on the backend.
+- Task: Reject invalid or mismatched session references.
+- Task: Test attempts to register attendance for the wrong class.
+
+
+---
+
+## US-14: Support Multiple Students Scanning at Once
+
+**User Story**
+
+As a lecturer, I want the system to handle many students scanning a QR code at the same time so that attendance registration continues smoothly during class.
+
+
+**Development Tasks**
+
+-  Task: Review the performance of attendance API endpoints.
+-  Task: Optimise database queries used during attendance registration.
+-  Task: Implement safe transaction handling.
+-  Task: Test multiple simultaneous attendance requests.
+-  Task: Measure response times under expected load.
+-  Task: Resolve identified performance bottlenecks.
+
+
+---
+
+## US-15: Keep the System Available
+
+**User Story**
+
+As a lecturer, I want the attendance system to remain available during classes so that students can register attendance when needed.
+
+**Development Tasks**
+
+-  Task: Configure the application for the agreed hosting environment.
+-  Task: Configure database connection and error handling.
+-  Task: Implement appropriate application logging.
+-  Task: Configure basic service health monitoring where supported.
+-  Task: Test behaviour during server or database failures.
+-  Task: Document recovery and maintenance procedures.
+
+
+---
+
+## US-16: Back Up Attendance Data
+
+**User Story**
+
+As a system administrator, I want regular database backups so that attendance records can be recovered if data is lost.
+
+
+**Development Tasks**
+
+-  Task: Select a backup method compatible with the hosting environment.
+-  Task: Configure a suitable backup schedule.
+-  Task: Secure stored backup files.
+-  Task: Document the database recovery procedure.
+-  Task: Test restoring a backup.
+-  Task: Record the backup and restore test results.
+
+
+---
+
+## US-18: Maintain the System Easily
+
+**User Story**
+
+As a developer, I want clear technical documentation and a maintainable codebase so that the system can be updated with minimal technical support.
+
+
+**Development Tasks**
+
+-  Task: Organise frontend and backend code.
+-  Task: Document database tables and relationships.
+-  Task: Document REST API endpoints.
+-  Task: Create a README with installation instructions.
+-  Task: Document environment configuration and deployment.
+-  Task: Review code for unnecessary complexity.
+-  Task: Test the documented setup process.
+
+
