@@ -586,7 +586,7 @@ As a developer, I want clear technical documentation and a maintainable codebase
 
 ---
 
-# 1. Product Goal
+#  Product Goal
 
 Develop a secure, reliable and user-friendly QR Code Attendance Management System that allows lecturers to generate QR codes for classes and students to register attendance by scanning them.
 
@@ -595,6 +595,17 @@ The system must prevent duplicate and fraudulent attendance records, provide att
 The product backlog includes required features, technical improvements, bug fixes, testing and deployment tasks.
 
 ---
+
+| Category | Main Work |
+|---|---|
+| Required Features | Login, QR generation, scanning, attendance, history and reports |
+| Bug Fixes | Database inactivity, slow responses, duplicate records, QR validation and incorrect class associations |
+| Security | Authentication, role-based access, secure configuration and POPIA |
+| Performance | Concurrent requests and response-time improvements |
+| Reliability | Database backups, restoration and connection handling |
+| Deployment | Hosting evaluation, database migration, configuration and testing |
+| Documentation | README, deployment instructions and recovery procedures |
+
 
 | Priority | Backlog Items | Reason | Status |
 |---|---|---|---|
@@ -615,12 +626,3 @@ The product backlog includes required features, technical improvements, bug fixe
 | Medium | PBI-08: Late-arrival handling | Supports lecturer attendance management. | Completed |
 
 
-| Category | Main Work |
-|---|---|
-| Required Features | Login, QR generation, scanning, attendance, history and reports |
-| Bug Fixes | Database inactivity, slow responses, duplicate records, QR validation and incorrect class associations |
-| Security | Authentication, role-based access, secure configuration and POPIA |
-| Performance | Concurrent requests and response-time improvements |
-| Reliability | Database backups, restoration and connection handling |
-| Deployment | Hosting evaluation, database migration, configuration and testing |
-| Documentation | README, deployment instructions and recovery procedures |
