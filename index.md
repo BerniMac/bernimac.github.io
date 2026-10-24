@@ -287,14 +287,14 @@ As a registered user, I want to log in securely so that I can access the system 
 
 **Development Tasks**
 
--  Task1: Create the login page using Vue.js and Bootstrap.
--  Task2: Create the login REST API endpoint in Spring Boot.
--  Task3: Implement authentication and credential verification.
--  Task4: Connect the login page to the backend API.
--  Task5: Configure role-based access for students, lecturers and administrators.
--  Task6: Implement secure session or token management.
--  Task7: Test valid and invalid login attempts.
--  Task8: Verify that unauthorised users cannot access protected pages.
+-  Task: Create the login page using Vue.js and Bootstrap.
+-  Task: Create the login REST API endpoint in Spring Boot.
+-  Task: Implement authentication and credential verification.
+-  Task: Connect the login page to the backend API.
+-  Task: Configure role-based access for students, lecturers and administrators.
+-  Task: Implement secure session or token management.
+-  Task: Test valid and invalid login attempts.
+-  Task: Verify that unauthorised users cannot access protected pages.
 
 
 ---
@@ -308,11 +308,11 @@ As a lecturer, I want only registered students to mark attendance so that unauth
 
 **Development Tasks**
 
--  Task9: Create or configure the student records in the database.
--  Task10: Implement student identity verification.
--  Task11: Validate authenticated users before processing attendance requests.
--  Task12: Restrict attendance endpoints to authorised students.
--  Task13: Test attendance attempts by registered and unregistered users.
+-  Task: Create or configure the student records in the database.
+-  Task: Implement student identity verification.
+-  Task: Validate authenticated users before processing attendance requests.
+-  Task: Restrict attendance endpoints to authorised students.
+-  Task: Test attendance attempts by registered and unregistered users.
 
 
 ---
@@ -326,15 +326,15 @@ As a lecturer, I want to generate a unique QR code for a class so that students 
 
 **Development Tasks**
 
--  Task14: Design the class and attendance session database tables.
--  Task15: Implement a unique session or token generator.
--  Task16: Integrate a QR code generation library.
--  Task17: Create the Spring Boot endpoint for generating QR codes.
--  Task18: Link each QR code to the correct class or module.
--  Task19: Implement the QR code expiry mechanism.
--  Task20: Create the lecturer interface for generating QR codes.
--  Task21: Display the generated QR code on the lecturer dashboard.
--  Task22: Test unique QR code generation and expiry.
+-  Task: Design the class and attendance session database tables.
+-  Task: Implement a unique session or token generator.
+-  Task: Integrate a QR code generation library.
+-  Task: Create the Spring Boot endpoint for generating QR codes.
+-  Task: Link each QR code to the correct class or module.
+-  Task: Implement the QR code expiry mechanism.
+-  Task: Create the lecturer interface for generating QR codes.
+-  Task: Display the generated QR code on the lecturer dashboard.
+-  Task: Test unique QR code generation and expiry.
 
 
 ---
@@ -347,13 +347,13 @@ As a system administrator, I want expired QR codes to be rejected so that studen
 
 **Development Tasks**
 
--  Task23: Store QR session tokens and expiry timestamps in MySQL.
--  Task24: Implement QR code validation in Spring Boot.
--  Task25: Check whether the QR code belongs to an active session.
--  Task26: Reject expired or invalid tokens.
--  Task27: Prevent reuse of expired QR sessions.
--  Task28: Display an error message when a QR code is invalid or expired.
--  Task29: Test expired, invalid and reused QR codes.
+-  Task: Store QR session tokens and expiry timestamps in MySQL.
+-  Task: Implement QR code validation in Spring Boot.
+-  Task: Check whether the QR code belongs to an active session.
+-  Task: Reject expired or invalid tokens.
+-  Task: Prevent reuse of expired QR sessions.
+-  Task: Display an error message when a QR code is invalid or expired.
+-  Task: Test expired, invalid and reused QR codes.
 
 
 ---
@@ -368,17 +368,17 @@ As a student, I want to scan the lecturer's QR code so that my attendance can be
 
 **Development Tasks**
 
--  Task30: Design the student attendance page.
--  Task31: Integrate a QR code scanning library.
--  Task32: Request camera access on supported devices.
--  Task33: Implement the QR scanning interface.
--  Task34: Send the scanned token to the Spring Boot API.
--  Task35: Validate the token, class and session.
--  Task36: Check that the attendance session is active.
--  Task37: Implement attendance registration.
--  Task38: Display the result of the attendance request.
--  Task39: Test scanning on supported mobile, tablet and desktop devices.
--  Task40: Measure response time and optimise the attendance request if necessary.
+-  Task: Design the student attendance page.
+-  Task: Integrate a QR code scanning library.
+-  Task: Request camera access on supported devices.
+-  Task: Implement the QR scanning interface.
+-  Task: Send the scanned token to the Spring Boot API.
+-  Task: Validate the token, class and session.
+-  Task: Check that the attendance session is active.
+-  Task: Implement attendance registration.
+-  Task: Display the result of the attendance request.
+-  Task: Test scanning on supported mobile, tablet and desktop devices.
+-  Task: Measure response time and optimise the attendance request if necessary.
 
 
 ---
@@ -392,12 +392,12 @@ As a lecturer, I want each student to mark attendance only once per session so t
 
 **Development Tasks**
 
--  Task41: Design the attendance table with student and session references.
--  Task42: Implement duplicate attendance checks.
--  Task43: Add an appropriate database uniqueness constraint.
--  Task44: Handle repeated or simultaneous attendance requests safely.
--  Task45: Display a message when attendance has already been recorded.
--  Task46: Test duplicate scans and concurrent requests.
+-  Task: Design the attendance table with student and session references.
+-  Task: Implement duplicate attendance checks.
+-  Task: Add an appropriate database uniqueness constraint.
+-  Task: Handle repeated or simultaneous attendance requests safely.
+-  Task: Display a message when attendance has already been recorded.
+-  Task: Test duplicate scans and concurrent requests.
 
 
 ---
@@ -411,11 +411,11 @@ As a student, I want to receive confirmation after successfully marking attendan
 
 **Development Tasks**
 
--  Task47: Create attendance success and error messages.
--  Task48: Return clear responses from the attendance API.
--  Task49: Display the confirmation on the student interface.
--  Task50: Handle network failures and server errors.
--  Tasl51: Test successful, duplicate and failed attendance requests.
+-  Task: Create attendance success and error messages.
+-  Task: Return clear responses from the attendance API.
+-  Task: Display the confirmation on the student interface.
+-  Task: Handle network failures and server errors.
+-  Tasl: Test successful, duplicate and failed attendance requests.
 
 
 ---
@@ -572,3 +572,55 @@ As a developer, I want clear technical documentation and a maintainable codebase
 -  Task: Test the documented setup process.
 
 
+
+# QAMS Product Backlog
+## QR Code Attendance Management System
+
+**Project:** QR Code Attendance Management System (QAMS)  
+**Team:** Team QAMS  
+**Methodology:** Scrum  
+**Frontend:** Vue.js and Bootstrap  
+**Backend:** Spring Boot REST API  
+**Database:** MySQL  
+**Current hosting issue:** The application experiences delays or unavailability when the database becomes inactive.
+
+---
+
+# 1. Product Goal
+
+Develop a secure, reliable and user-friendly QR Code Attendance Management System that allows lecturers to generate QR codes for classes and students to register attendance by scanning them.
+
+The system must prevent duplicate and fraudulent attendance records, provide attendance reports, protect student information and remain responsive during class sessions.
+
+The product backlog includes required features, technical improvements, bug fixes, testing and deployment tasks.
+
+---
+
+| Priority | Backlog Items | Reason | Status |
+|---|---|---|---|
+| Critical | PBI-07: Database inactivity investigation and migration | Resolve the current reliability problem before the final demonstration. | Completed |
+| High | PBI-01: Authentication | Required for secure access. | Completed |
+| High | PBI-02: QR code generation | Core system functionality. | Completed |
+| High | PBI-03: Attendance registration | Core system functionality. | Completed |
+| High | PBI-04: Duplicate prevention | Protects attendance accuracy. | Completed |
+| High | PBI-06: Attendance reports | Required lecturer functionality. | Completed |
+| High | BUG-03: QR validation | Prevents invalid attendance registration. | Completed |
+| High | BUG-05: Class validation | Prevents incorrect attendance records. | Completed |
+| High | PBI-08: Data protection | Protects student information. | Completed |
+| High | PBI-09: Concurrent requests | Supports attendance during busy class sessions. | Completed |
+| High | PBI-12: Deployment | Required for a working demonstration. | Completed |
+| Medium | PBI-05: Student attendance history | Allows students to review attendance. | Completed |
+| Medium | PBI-11: Responsive design | Improves usability across devices. | Completed |
+| Medium | PBI-10: Backups | Supports data recovery. | Completed |
+| Medium | PBI-08: Late-arrival handling | Supports lecturer attendance management. | Completed |
+
+
+| Category | Main Work |
+|---|---|
+| Required Features | Login, QR generation, scanning, attendance, history and reports |
+| Bug Fixes | Database inactivity, slow responses, duplicate records, QR validation and incorrect class associations |
+| Security | Authentication, role-based access, secure configuration and POPIA |
+| Performance | Concurrent requests and response-time improvements |
+| Reliability | Database backups, restoration and connection handling |
+| Deployment | Hosting evaluation, database migration, configuration and testing |
+| Documentation | README, deployment instructions and recovery procedures |
