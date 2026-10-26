@@ -1643,7 +1643,6 @@ The product backlog includes required features, technical improvements, bug fixe
    - The reporting feature still required further development and testing before it could be considered complete.
 
 
-
 # TEAM CHARTER REFLECTION 
 
 Creation of a team charter was the most difficult task during the course of the project for me. This is because the team charter involved a lot of contemplation and critical thinking regarding the manner in which the project would be carried out and managed throughout its life cycle. We had to lay down our mission and vision and develop roles and responsibilities for each of the team members. In addition, we also had to decide on how we would plan, organize, and control ourselves. Deciding on how we will assess our performance and evaluate whether or not we are satisfied with our work was another difficult activity. There was also the challenge of finding the ways to handle differences and conflicts between the members and the manner in which we would ensure that every member contributes effectively. Through this exercise, I learned that teamwork involves more than the division of tasks among the group members. Effective teamwork involves efficient communication, mutual respect, accountability and common understanding of the objectives that we are to achieve. Though creating a team charter was difficult, it made me appreciate the value of setting expectations and rules before starting any project.
