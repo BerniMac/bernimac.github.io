@@ -1127,3 +1127,115 @@ The product backlog includes required features, technical improvements, bug fixe
 - Verify that technical documentation is complete.
 - Resolve outstanding documentation and maintainability issues.
 
+
+# QR Attendance — Agile Logbook
+
+  ## Tuesday, 14 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - We attended the first meeting about the work-integrated learning (WIL) task.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Start preparing the WIL presentation.
+
+3. **What are our impediments, risks or problems?**
+   - There was not enough time to develop a fully planned presentation.
+
+## Wednesday, 15 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - We completed the WIL presentation.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Discuss which project task the group should start next.
+
+3. **What are our impediments, risks or problems?**
+   - No specific impediment was recorded.
+
+## Thursday, 16 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - The group met to discuss how to start the project.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Begin requirements analysis and planning, including user and system requirements.
+
+3. **What are our impediments, risks or problems?**
+   - No specific impediment was recorded.
+
+## Friday, 17 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - No meeting took place.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Continue project planning and prepare for the next group discussion.
+
+3. **What are our impediments, risks or problems?**
+   - Progress was limited because no meeting took place.
+
+## Tuesday, 21 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - We edited the business plan presentation.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Add cards and user stories to the Trello board.
+
+3. **What are our impediments, risks or problems?**
+   - The free version of Trello limited our ability to add names and dates to tasks.
+
+## Wednesday, 22 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - We updated the business plan presentation and prepared to present the Trello board.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Adjust the Trello board according to the required specification.
+
+3. **What are our impediments, risks or problems?**
+   - The free version of Trello still limited task assignment and date options.
+
+## Thursday, 23 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - We added daily tasks for group members based on the use cases and user stories.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Present the Trello board and start working on wireframes and the prototype.
+
+3. **What are our impediments, risks or problems?**
+   - We had limited time and needed more knowledge to create a functional prototype.
+
+## Friday, 24 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - We selected the colour palette and typography for the wireframes.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Complete the wireframes and prepare them for the following week's presentation.
+
+3. **What are our impediments, risks or problems?**
+   - The wireframes and prototype were still static and needed further work to become functional.
+
+## Tuesday, 28 July 2026
+
+1. **What did we complete since the last stand-up?**
+   - Not recorded in the supplied logbooks. Add the work the group actually completed.
+
+2. **What are we planning to complete before the next stand-up?**
+   - Record the next task agreed by the group using the Trello board.
+
+3. **What are our impediments, risks or problems?**
+   - Record any actual blocker or state that no impediment was recorded.
+
+## Wednesday, 4 August 2026
+1.**What did we complete since the last stand-up?**
+   - 
+
+
+# TEAM CHARTER REFLECTION 
+
+Creation of a team charter was the most difficult task during the course of the project for me. This is because the team charter involved a lot of contemplation and critical thinking regarding the manner in which the project would be carried out and managed throughout its life cycle. We had to lay down our mission and vision and develop roles and responsibilities for each of the team members. In addition, we also had to decide on how we would plan, organize, and control ourselves. Deciding on how we will assess our performance and evaluate whether or not we are satisfied with our work was another difficult activity. There was also the challenge of finding the ways to handle differences and conflicts between the members and the manner in which we would ensure that every member contributes effectively. Through this exercise, I learned that teamwork involves more than the division of tasks among the group members. Effective teamwork involves efficient communication, mutual respect, accountability and common understanding of the objectives that we are to achieve. Though creating a team charter was difficult, it made me appreciate the value of setting expectations and rules before starting any project.
+
+
