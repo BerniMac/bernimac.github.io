@@ -626,3 +626,504 @@ The product backlog includes required features, technical improvements, bug fixe
 | Medium | PBI-08: Late-arrival handling | Supports lecturer attendance management. | Completed |
 
 
+# QAMS SPRINT BACKLOG 
+## Day 1 – Project Initialization
+- Create the Vue.js frontend project.
+- Configure the Spring Boot backend project.
+- Install and configure Bootstrap.
+- Set up the frontend and backend project structure.
+
+## Day 2 – Database Schema
+- Create the MySQL database.
+- Create or configure student records.
+- Define the initial database relationships.
+- Configure database connectivity.
+
+## Day 3 – Authentication Backend
+- Create the login REST API endpoint in Spring Boot.
+- Implement authentication and credential verification.
+- Configure role-based access for students, lecturers and administrators.
+- Implement secure session or token management.
+
+## Day 4 – Login Interface and Integration
+- Create the login page using Vue.js and Bootstrap.
+- Connect the login page to the backend API.
+- Test valid and invalid login attempts.
+- Verify that unauthorised users cannot access protected pages.
+
+## Carry-over to Sprint Week 2
+- Resolve any incomplete authentication tasks.
+- Complete remaining login and access-control tests.
+
+
+---
+
+# Sprint Week 2: Restrict Access to Registered Students (US-02)
+
+## Sprint backlog
+
+### In progress
+- Student identity verification
+- Attendance access restrictions
+
+### Completed
+- Carry-over tasks from Week 1, where applicable
+
+## Day 1 – Student Records
+- Finalise student records in the database.
+- Verify that student records contain the required information.
+
+## Day 2 – Identity Verification
+- Implement student identity verification.
+- Validate authenticated users before processing attendance requests.
+
+## Day 3 – Access Restrictions
+- Restrict attendance endpoints to authorised students.
+- Integrate student verification with the authentication system.
+
+## Day 4 – Testing
+- Test attendance attempts by registered students.
+- Test attendance attempts by unregistered users.
+- Correct any identified access-control problems.
+
+## Carry-over to Sprint Week 3
+- Resolve unfinished student verification or access-control tasks.
+
+
+---
+
+# Sprint Week 3: Generate a QR Code for a Class (US-03)
+
+## Sprint backlog
+
+### In progress
+- Class and attendance session design
+- QR code generation
+
+### Completed
+- Student access-control tasks, where applicable
+
+## Day 1 – Database Design
+- Design the class and attendance session database tables.
+- Define relationships between classes, modules and attendance sessions.
+
+## Day 2 – QR Code Backend
+- Implement a unique session or token generator.
+- Integrate a QR code generation library.
+- Create the Spring Boot endpoint for generating QR codes.
+
+## Day 3 – QR Code Rules
+- Link each QR code to the correct class or module.
+- Implement the QR code expiry mechanism.
+
+## Day 4 – Lecturer Interface
+- Create the lecturer interface for generating QR codes.
+- Display the generated QR code on the lecturer dashboard.
+- Test unique QR code generation and expiry.
+
+## Carry-over to Sprint Week 4
+- Complete any unfinished QR code generation or interface tasks.
+
+
+---
+
+# Sprint Week 4: Prevent Expired and Reused QR Codes (US-04)
+
+## Sprint backlog
+
+### In progress
+- QR session validation
+- Expiry and reuse prevention
+
+### Completed
+- QR code generation tasks, where applicable
+
+## Day 1 – Token Storage
+- Store QR session tokens and expiry timestamps in MySQL.
+- Verify the relationship between QR tokens and attendance sessions.
+
+## Day 2 – Validation
+- Implement QR code validation in Spring Boot.
+- Check whether the QR code belongs to an active session.
+
+## Day 3 – Expiry and Error Handling
+- Reject expired or invalid tokens.
+- Prevent reuse of expired QR sessions.
+- Display an error message when a QR code is invalid or expired.
+
+## Day 4 – Testing
+- Test expired QR codes.
+- Test invalid QR codes.
+- Test attempts to reuse expired QR codes.
+
+## Carry-over to Sprint Week 5
+- Resolve remaining QR validation and expiry issues.
+
+
+---
+
+# Sprint Week 5: Scan a QR Code to Mark Attendance (US-05)
+
+## Sprint backlog
+
+### In progress
+- QR scanning interface
+- Attendance registration
+
+### Completed
+- QR expiry and validation tasks, where applicable
+
+## Day 1 – Student Interface
+- Design the student attendance page.
+- Integrate a QR code scanning library.
+- Request camera access on supported devices.
+
+## Day 2 – QR Scanning and API Integration
+- Implement the QR scanning interface.
+- Send the scanned token to the Spring Boot API.
+- Validate the token, class and session.
+
+## Day 3 – Attendance Registration
+- Check that the attendance session is active.
+- Implement attendance registration.
+- Display the result of the attendance request.
+
+## Day 4 – Testing and Performance
+- Test scanning on supported mobile, tablet and desktop devices.
+- Measure attendance request response time.
+- Optimise the attendance request if necessary.
+
+## Carry-over to Sprint Week 6
+- Complete unfinished scanning, registration or performance tasks.
+
+
+---
+
+# Sprint Week 6: Prevent Duplicate Attendance (US-06)
+
+## Sprint backlog
+
+### In progress
+- Duplicate attendance prevention
+- Database constraints
+
+### Completed
+- Attendance scanning tasks, where applicable
+
+## Day 1 – Attendance Table
+- Design the attendance table with student and session references.
+- Verify the attendance table relationships.
+
+## Day 2 – Duplicate Checks
+- Implement duplicate attendance checks.
+- Add an appropriate database uniqueness constraint.
+
+## Day 3 – Concurrent Requests
+- Handle repeated attendance requests safely.
+- Handle simultaneous attendance requests safely.
+
+## Day 4 – Testing
+- Test duplicate QR scans.
+- Test concurrent attendance requests.
+- Display a message when attendance has already been recorded.
+
+## Carry-over to Sprint Week 7
+- Resolve unfinished duplicate-prevention or concurrency issues.
+
+
+---
+
+# Sprint Week 7: Receive Attendance Confirmation (US-07)
+
+## Sprint backlog
+
+### In progress
+- Attendance confirmation
+- Error handling
+
+### Completed
+- Duplicate attendance prevention tasks, where applicable
+
+## Day 1 – API Responses
+- Create attendance success and error messages.
+- Return clear responses from the attendance API.
+
+## Day 2 – Frontend Confirmation
+- Display attendance confirmation on the student interface.
+- Show clear messages for unsuccessful attendance requests.
+
+## Day 3 – Failure Handling
+- Handle network failures.
+- Handle server errors.
+
+## Day 4 – Testing
+- Test successful attendance requests.
+- Test duplicate attendance requests.
+- Test failed attendance requests.
+
+## Carry-over to Sprint Week 8
+- Resolve any unfinished confirmation or error-handling tasks.
+
+
+---
+
+# Sprint Week 8: View Attendance History (US-09)
+
+## Sprint backlog
+
+### In progress
+- Attendance history page
+- Attendance history API
+
+### Completed
+- Attendance confirmation tasks, where applicable
+
+## Day 1 – History API
+- Create an API endpoint to retrieve attendance history.
+- Query attendance records associated with the logged-in student.
+
+## Day 2 – History Interface
+- Create the student attendance history page.
+- Display class, module, date and attendance status.
+
+## Day 3 – Interface States
+- Add loading messages.
+- Add empty-state messages when no records exist.
+
+## Day 4 – Testing
+- Test attendance history retrieval.
+- Test access restrictions.
+- Verify that students can only view their own attendance history.
+
+## Carry-over to Sprint Week 9
+- Resolve unfinished history retrieval or access-control tasks.
+
+
+---
+
+# Sprint Week 9: Generate Attendance Reports (US-10)
+
+## Sprint backlog
+
+### In progress
+- Attendance report queries
+- Lecturer reports interface
+
+### Completed
+- Student attendance history tasks, where applicable
+
+## Day 1 – Report Requirements
+- Identify the required attendance report fields.
+- Create database queries for attendance reports.
+
+## Day 2 – Report API
+- Develop the Spring Boot report endpoint.
+- Implement filtering by class, module or date where required.
+
+## Day 3 – Reports Interface
+- Create the lecturer reports page.
+- Display attendance records in a readable table.
+
+## Day 4 – Security and Testing
+- Restrict reports to authorised lecturers and administrators.
+- Test report accuracy.
+- Test report access control.
+
+## Carry-over to Sprint Week 10
+- Complete any unfinished reporting, filtering or security tasks.
+
+
+---
+
+# Sprint Week 10: Protect Student Data (US-12)
+
+## Sprint backlog
+
+### In progress
+- Data protection
+- Privacy and authorisation
+
+### Completed
+- Attendance report tasks, where applicable
+
+## Day 1 – Data Review
+- Identify the student data required by the system.
+- Configure secure database access.
+
+## Day 2 – Access and Encryption
+- Implement role-based authorisation.
+- Protect sensitive data using appropriate encryption.
+
+## Day 3 – Deployment Security and Privacy
+- Configure HTTPS for deployed environments.
+- Review logging to prevent unnecessary exposure of personal data.
+- Review data handling against applicable POPIA requirements.
+
+## Day 4 – Testing
+- Test access restrictions.
+- Test data protection controls.
+- Resolve identified security issues.
+
+## Carry-over to Sprint Week 11
+- Complete any unfinished privacy or security improvements.
+
+
+---
+
+# Sprint Week 11: Prevent Attendance for the Wrong Class (US-13)
+
+## Sprint backlog
+
+### In progress
+- Class and module validation
+- QR session reference validation
+
+### Completed
+- Student data protection tasks, where applicable
+
+## Day 1 – Relationship Review
+- Define relationships between classes, modules and attendance sessions.
+
+## Day 2 – Secure Session References
+- Include a secure session reference in generated QR codes.
+
+## Day 3 – Backend Validation
+- Validate the class or module on the backend.
+- Reject invalid or mismatched session references.
+
+## Day 4 – Testing
+- Test attempts to register attendance for the wrong class.
+- Verify that attendance is recorded against the correct session.
+
+## Carry-over to Sprint Week 12
+- Resolve remaining class validation issues.
+
+
+---
+
+# Sprint Week 12: Support Multiple Students Scanning at Once (US-14)
+
+## Sprint backlog
+
+### In progress
+- Attendance API performance
+- Concurrent attendance processing
+
+### Completed
+- Class validation tasks, where applicable
+
+## Day 1 – Performance Review
+- Review the performance of attendance API endpoints.
+- Identify database queries that may slow down attendance registration.
+
+## Day 2 – Database Optimisation
+- Optimise database queries used during attendance registration.
+
+## Day 3 – Transaction Handling
+- Implement safe transaction handling.
+- Verify that simultaneous requests do not create inconsistent records.
+
+## Day 4 – Load Testing
+- Test multiple simultaneous attendance requests.
+- Measure response times under expected load.
+- Resolve identified performance bottlenecks.
+
+## Carry-over to Sprint Week 13
+- Complete any unfinished performance improvements.
+
+
+---
+
+# Sprint Week 13: Keep the System Available (US-15)
+
+## Sprint backlog
+
+### In progress
+- Application deployment
+- Availability and recovery
+
+### Completed
+- Performance and concurrency tasks, where applicable
+
+## Day 1 – Hosting Configuration
+- Configure the application for the agreed hosting environment.
+- Configure the database connection.
+
+## Day 2 – Error Handling and Logging
+- Implement appropriate application logging.
+- Improve database connection and error handling.
+
+## Day 3 – Monitoring and Failure Handling
+- Configure basic service health monitoring where supported.
+- Test behaviour during server or database failures.
+
+## Day 4 – Recovery Documentation
+- Document recovery procedures.
+- Document maintenance procedures.
+
+## Carry-over to Sprint Week 14
+- Resolve unfinished availability or deployment issues.
+
+
+---
+
+# Sprint Week 14: Back Up Attendance Data (US-16)
+
+## Sprint backlog
+
+### In progress
+- Database backup configuration
+- Data recovery testing
+
+### Completed
+- Availability tasks, where applicable
+
+## Day 1 – Backup Planning
+- Select a backup method compatible with the hosting environment.
+- Configure a suitable backup schedule.
+
+## Day 2 – Backup Security
+- Secure stored backup files.
+- Verify that backup access is restricted.
+
+## Day 3 – Recovery Documentation
+- Document the database recovery procedure.
+
+## Day 4 – Restore Testing
+- Test restoring a backup.
+- Record the backup and restore test results.
+
+## Carry-over to Sprint Week 15
+- Resolve any failed backup or restoration tests.
+
+
+---
+
+# Sprint Week 15: Maintain the System Easily (US-18)
+
+## Sprint backlog
+
+### In progress
+- Technical documentation
+- Code maintenance
+
+### Completed
+- Backup and recovery tasks, where applicable
+
+## Day 1 – Code Organisation
+- Organise frontend and backend code.
+- Review code for unnecessary complexity.
+
+## Day 2 – Database and API Documentation
+- Document database tables and relationships.
+- Document REST API endpoints.
+
+## Day 3 – Project Documentation
+- Create a README with installation instructions.
+- Document environment configuration and deployment.
+
+## Day 4 – Final Review
+- Test the documented setup process.
+- Verify that technical documentation is complete.
+- Resolve outstanding documentation and maintainability issues.
+
