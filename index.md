@@ -1244,10 +1244,10 @@ The product backlog includes required features, technical improvements, bug fixe
 ## Tuesday, 4 August 2026 
 
 1. **What did we complete since the last stand-up?**
-   - We reviewed the project requirements and discussed the initial setup of the QR Attendance system.
+   - We reviewed the project requirements and discussed the initial setup of the QR Attendance system and also adjust the trello board further .
 
 2. **What are we planning to complete before the next stand-up?**
-   - Create the Vue.js frontend project and configure the Spring Boot backend.
+   -We looked at different restful consuming alternatives and decided on Vue js. Create the Vue.js frontend project and configure the Spring Boot backend.
 
 3. **What are our impediments, risks or problems?**
    - We needed to organise the frontend and backend before development could proceed smoothly.
@@ -1255,7 +1255,7 @@ The product backlog includes required features, technical improvements, bug fixe
 ## Wednesday, 5 August 2026 
 
 1. **What did we complete since the last stand-up?**
-   - We worked on the project structure and prepared the initial database setup.
+   - We worked on the project structure and prepared the initial database setup which is based on the uml diagram and edited the front-end.
 
 2. **What are we planning to complete before the next stand-up?**
    - Configure the MySQL database connection and identify the initial student records and database relationships.
@@ -1266,7 +1266,9 @@ The product backlog includes required features, technical improvements, bug fixe
 ## Thursday, 6 August 2026 
 
 1. **What did we complete since the last stand-up?**
-   - We worked on the initial authentication backend and planned the login API.
+   - Changed a few elements in the front-end to match our planning on Figma We worked on the initial authentication backend and planned the login API and 
+     refined the relationships in the database adding constraints relation type by 
+     looking at our uml diagram.
 
 2. **What are we planning to complete before the next stand-up?**
    - Implement credential verification and plan role-based access for students, lecturers and administrators.
@@ -1277,10 +1279,11 @@ The product backlog includes required features, technical improvements, bug fixe
 ## Friday, 7 August 2026 
 
 1. **What did we complete since the last stand-up?**
-   - We worked on the login interface and the connection between the frontend and backend.
+   - We worked on the login interface and the connection between the frontend and backend adding hash-passwords and looking at simple passwords like student 
+     number as testing passwords.
 
 2. **What are we planning to complete before the next stand-up?**
-   - Review login functionality and test valid and invalid login attempts.
+   - Review login functionality and test valid and invalid login attempts by also adding spring security dependencies to the pom file.
 
 3. **What are our impediments, risks or problems?**
    - Any unfinished authentication or project setup tasks needed to be carried over to the next sprint.
@@ -1344,86 +1347,6 @@ The product backlog includes required features, technical improvements, bug fixe
 3. **What are our impediments, risks or problems?**
    - The database needed to link each attendance session to the correct class or module.
 
-## Wednesday,19 August 2026  
-
-1. **What did we complete since the last stand-up?**
-   - We worked on the database design and the QR code generation requirements.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Implement a unique session token generator and integrate a QR code generation library.
-
-3. **What are our impediments, risks or problems?**
-   - QR codes needed unique references to prevent confusion between attendance sessions.
-
-## Thursday, 20 August 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We worked on the planned QR code generation functionality.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Create the Spring Boot QR generation endpoint and implement the expiry mechanism.
-
-3. **What are our impediments, risks or problems?**
-   - The QR code generation process needed to work correctly with the attendance session database.
-
-## Friday, 21 August 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the QR code generation workflow and the lecturer interface requirements.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Complete the lecturer interface, display generated QR codes and test unique code generation.
-
-3. **What are our impediments, risks or problems?**
-   - Any incomplete QR generation or interface tasks needed to be carried over.
-
----
-
-## Tuesday, 25 August 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the QR code generation requirements and started planning QR session validation.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Store QR session tokens and expiry timestamps in MySQL.
-
-3. **What are our impediments, risks or problems?**
-   - Session tokens and expiry information needed to be stored consistently.
-
-## Wednesday, 26 August 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We worked on the QR session storage and validation requirements.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Implement QR code validation in Spring Boot and check whether sessions are active.
-
-3. **What are our impediments, risks or problems?**
-   - The backend needed to distinguish active sessions from expired or invalid ones.
-
-## Thursday, 27 August 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We worked on the QR validation and expiry rules.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Reject expired or invalid tokens and display appropriate error messages.
-
-3. **What are our impediments, risks or problems?**
-   - The validation process needed to prevent old QR codes from being accepted.
-
-## Friday, 28 August 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the QR code validation and expiry requirements.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Test expired, invalid and reused QR codes and resolve any remaining issues.
-
-3. **What are our impediments, risks or problems?**
-   - Any incomplete validation tests needed to be carried over to the next sprint.
-
----
 
 ## Tuesday, 1 September 2026 
 
@@ -1499,10 +1422,10 @@ The product backlog includes required features, technical improvements, bug fixe
    - We reviewed how the system should respond to repeated attendance requests.
 
 2. **What are we planning to complete before the next stand-up?**
-   - Implement safe handling of repeated and simultaneous attendance requests.
+   - Implement safe handling of repeated and simultaneous attendance requests to host on vercel and test the functionality as a student.
 
 3. **What are our impediments, risks or problems?**
-   - Simultaneous requests could create duplicate records if they were not handled safely.
+   - Simultaneous requests could create duplicate records if they were not handled safely vercel might work as a host.
 
 ## Friday, 11 September 2026 
 
@@ -1520,13 +1443,14 @@ The product backlog includes required features, technical improvements, bug fixe
 ## Tuesday, 15 September 2026 
 
 1. **What did we complete since the last stand-up?**
-   - We reviewed attendance registration and began planning the confirmation messages shown to students.
+   - We reviewed attendance registration and began planning the confirmation messages shown to students and also the application is functional on vercel passed 
+     its testing.
 
 2. **What are we planning to complete before the next stand-up?**
-   - Create clear success and error messages and define the attendance API responses.
+   - Create clear success and error messages and define the attendance API responses and maybe present the system we have so far.
 
 3. **What are our impediments, risks or problems?**
-   - The system needed to communicate attendance results clearly to users.
+   - The system needed to communicate attendance results clearly to users the database might not stay live for a long period of time.
 
 ## Wednesday, 16 September 2026 
 
@@ -1542,7 +1466,7 @@ The product backlog includes required features, technical improvements, bug fixe
 ## Thursday, 17 September 2026
 
 1. **What did we complete since the last stand-up?**
-   - We reviewed the attendance confirmation process.
+   - We reviewed the attendance confirmation process .
 
 2. **What are we planning to complete before the next stand-up?**
    - Add handling for network failures and server errors.
@@ -1553,72 +1477,15 @@ The product backlog includes required features, technical improvements, bug fixe
 ## Friday, 18 September 2026 
 
 1. **What did we complete since the last stand-up?**
-   - We reviewed the attendance confirmation and error-handling requirements.
+   - We reviewed the attendance confirmation and error-handling requirements we also reviewed some challenges faced with hosting it on vercel.
 
 2. **What are we planning to complete before the next stand-up?**
-   - Test successful, duplicate and failed attendance requests.
+   - Test successful, duplicate and failed attendance requests see if the challenge still prevails on hosting it on vercel.
 
 3. **What are our impediments, risks or problems?**
-   - Any incomplete confirmation or error-handling tasks needed to be carried forward.
+   - Any incomplete confirmation or error-handling tasks needed to be carried forward if the vercel problem still occurs need to find a batter hosting platform.
 
 ---
-
-## Tuesday, 22 September 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the completed attendance workflow and began planning the student attendance history feature.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Create the API endpoint for retrieving attendance history and query records for the logged-in student.
-
-3. **What are our impediments, risks or problems?**
-   - Attendance history needed to be restricted to the correct student account.
-
-## Wednesday,23 September 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We worked on the attendance history API and the data required by the student interface.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Create the attendance history page and display class, module, date and attendance status.
-
-3. **What are our impediments, risks or problems?**
-   - The interface needed to display attendance records in a clear and organised format.
-
-## Thursday,24 September 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the attendance history page and the information it needed to display.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Add loading indicators and empty-state messages for students who have no attendance records.
-
-3. **What are our impediments, risks or problems?**
-   - The interface needed to handle loading delays and situations where no records were available.
-
-## Friday, 25 September 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the attendance history functionality and its access restrictions.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Test history retrieval and verify that students can only access their own records.
-
-3. **What are our impediments, risks or problems?**
-   - Any outstanding history or access-control issues needed to be resolved before moving to reporting.
-
----
-
-## Tuesday, 29 September 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the attendance history requirements and began planning lecturer attendance reports.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Identify the required report fields and prepare database queries for attendance reports.
-
-3. **What are our impediments, risks or problems?**
-   - Report requirements needed to be clearly defined to ensure accurate attendance information.
 
 ## Wednesday, 30 September 2026 
 
@@ -1626,21 +1493,11 @@ The product backlog includes required features, technical improvements, bug fixe
    - We reviewed the attendance report requirements and planned the backend reporting functionality.
 
 2. **What are we planning to complete before the next stand-up?**
-   - Develop the Spring Boot report endpoint and plan filtering by class, module or date.
+   - Develop the Spring Boot report endpoint and plan filtering by class, module or date upload the link to our application.
 
 3. **What are our impediments, risks or problems?**
    - Report queries needed to return accurate results without exposing information to unauthorised users.
 
-## Thursday, 1 October 2026 
-
-1. **What did we complete since the last stand-up?**
-   - We reviewed the progress of the attendance reporting feature and identified the remaining work.
-
-2. **What are we planning to complete before the next stand-up?**
-   - Continue developing the lecturer reports page, organise attendance records into a readable table and plan report access-control testing.
-
-3. **What are our impediments, risks or problems?**
-   - The reporting feature still required further development and testing before it could be considered complete.
 
 
 # TEAM CHARTER REFLECTION 
